@@ -94,6 +94,113 @@
 .lista-habilidades li i{
     font-size: 2em;
 }
+/*  */
+
+
+/* Projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.projetos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.projetos-lista{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projeto-cards{
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.card-img{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    height: 115%;
+    outline: transparent;
+    transition: transform 500ms;
+}
+
+.card-img img:hover{
+    transform: scale(1.8);
+}
+
+.card-text{
+    margin-top: 10px;
+}
+
+.card-text h2{
+    font-weight: lighter;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.card-text p{
+    color: #00A671;
+    font-weight: lighter;
+}
+
+.visualizar-button{
+    text-decoration: none;
+    color: white;
+    background-color: #00E69D;
+    padding: 5px 15px;
+    border-radius: 25px;
+    transition: all 200ms;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.visualizar-button:hover{
+    background-color: white;
+    color: #00E69D;
+    border: 1px solid #00E69D;
+}
+
+.devradar{
+    text-align: center;
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.devradar img{
+    width: 100%;
+    margin: 10px;
+}
+/*  */
 
 /* Footer */
 .contato{
