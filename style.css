@@ -1,0 +1,353 @@
+.body{
+    padding-top: 75px;
+}
+.item{
+    color: aliceblue;
+}
+@media (max-width: 767px){
+    #home-quote .display-4{
+        font-size: 2.5rem;
+    }
+    
+    .fixed-top{
+        position: relative;
+    }
+}
+
+.carousel-caption{
+    color: #607D8B;
+}
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0,0,0,.2);
+  }
+  
+.lista-plano li {
+    padding: 1rem;
+}
+/* Sobre */
+.about{
+    background-color: rgb(245, 245, 245);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .2);
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile h1{
+    margin-bottom: 10px;
+}
+
+.profile img{
+    max-height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades h2{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista-habilidades li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.lista-habilidades li i{
+    font-size: 2em;
+}
+
+/* Footer */
+.contato{
+    background-image: url(./img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contato-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-text{
+    background-color: white;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .2);
+    width: 95%;
+    height: 350px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+ .lista-contato li{
+    list-style: none;
+    margin: 10px;
+}
+
+.lista-contato li i{
+    font-size: 2.4em;
+}
+
+.contato-page ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contatos-link{
+    display: flex;
+    list-style: none;
+    font-size: 3.2em;
+}
+
+.contatos-link a{
+    margin: 0 20px;
+}
+
+.copy{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+@media screen and (max-width: 640px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background-color: #00E69D;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 250ms ease-in;
+        display: none;
+    }
+    
+    .nav-links li{
+        opacity: 0;
+    }
+    
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    background-color: #00E69D;
+}
+
+.nav-active ul{
+    display: flex;
+}
+
+@keyframes navLinkFade{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,  6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,  -6px);
+}
+
+@media screen and (min-width: 715px){
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .capa-content .text{
+        font-size: 2em;
+        width: 55%;
+        white-space: nowrap;
+    }
+
+    .about-content{
+        width: 75%;
+    }
+
+    .profile{
+        width: 85%;
+    }
+
+    .projetos-content{
+        width: 75%;
+    }
+
+    .projetos-lista{
+        width: 100%;
+    }
+
+    .projeto-cards{
+        width: 350px;
+    }
+
+    .devradar{
+        width: 350px;
+    }
+
+    .contato-text{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .capa-content .text{
+        width: 45%;
+    }
+
+    .about-content{
+        width: 50%;
+    }
+
+    .projetos-content{
+        width: 100%;
+    }
+
+    .devradar{
+        width: 95%;
+    }
+
+    .devradar img{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 980px){
+
+    .projeto-cards{
+        width: 325px;
+        margin: 10px;
+    }
+
+    .contato-text{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1068px){
+    .capa-content .text{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1190px){
+    .capa-content .text{
+        width: 35%;
+    }
+   
+    .projetos-content{
+        width: 100%;
+    }
+
+    .projetos-lista{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .projeto-cards{
+        width: 20%;
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 1480px){
+    .capa-content{
+        margin-bottom: 150px;
+        margin-right: 25px;
+    }
+
+    .contato-text{
+        width: 25%;
+    }
+}
