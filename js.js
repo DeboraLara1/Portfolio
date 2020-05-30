@@ -7,6 +7,7 @@ document.onscroll = () => {
     } else{
         document.querySelector('nav').classList.add('onscroll');
     }
+    
 }
 
 function navSlide(){
@@ -14,26 +15,12 @@ function navSlide(){
     const nav = document.querySelector('nav');
     const navLinks = document.querySelectorAll('.nav-links li');
 
-    burger.onclick = () => {
-        //toggle nav
-        nav.classList.toggle('nav-active');
-        
-        //animate links
-        navLinks.forEach((link, index) => {
-            if(link.style.animation){
-                link.style.animation = '';
-            } else{
-                link.style.animation = `navLinkFade 500ms ease forwards ${index / 5}s`;
-            }
-        });
-        
-        //burger animation
-        burger.classList.toggle('toggle');
-    }
 }
+const date = new Date();
+document.querySelector('.ano-atual').innerHTML = date.getFullYear();
 
 function typewritter(){
-    const texts = ['Desenvolvedor Front-End'];
+    const texts = ['Desenvolvedora Front-End'];
     let count = 0;
     let index = 0;
     let currentText = '';
@@ -47,16 +34,11 @@ function typewritter(){
         letter = currentText.slice(0, ++index);
         
         document.querySelector('.typewritter').textContent = letter;
-        setTimeout(type, 200);
+        setTimeout(type, 150);
     }
     
     type();
 }
 
-const date = new Date();
-document.querySelector('.ano-atual').innerHTML = date.getFullYear();
 
- 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
+
