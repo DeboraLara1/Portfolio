@@ -281,58 +281,6 @@ nav{
     border: 1px solid #00E69D;
 }
 
-.visualizar-button-v1{
-    text-decoration: none;
-    color: white;
-    background-color: #40C4FF;
-    padding: 5px 15px;
-    border-radius: 25px;
-    transition: all 200ms;
-    border: 1px solid transparent;
-    text-align: center;
-    margin-top: 34%;
-}
-
-.visualizar-button-v1:hover{
-    background-color: white;
-    color: #00E69D;
-    border: 1px solid #00E69D;
-}
-
-.visualizar-button-v2{
-    text-decoration: none;
-    color: white;
-    background-color: #40C4FF;
-    padding: 5px 15px;
-    border-radius: 25px;
-    transition: all 200ms;
-    border: 1px solid transparent;
-    text-align: center;
-    margin-top: 2%;
-}
-
-.visualizar-button-v2:hover{
-    background-color: white;
-    color: #00E69D;
-    border: 1px solid #00E69D;
-}
-.visualizar-button-v3{
-    text-decoration: none;
-    color: white;
-    background-color: #40C4FF;
-    padding: 5px 15px;
-    border-radius: 25px;
-    transition: all 200ms;
-    border: 1px solid transparent;
-    text-align: center;
-    margin-top: 6%;
-}
-
-.visualizar-button-v3:hover{
-    background-color: white;
-    color: #00E69D;
-    border: 1px solid #00E69D;
-}
 
 
 /*  */
